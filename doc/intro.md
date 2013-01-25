@@ -35,7 +35,7 @@ required columns are below:
 | Session data            | `"session_val"` | As per `make-session-store :serializer` |
 | Last-accessed timestamp | `"session_ts"`  | `java.sql.Timestamp` |
 
-## `drop-session-table` - Drops the session table in database
+## `drop-session-table` - Drops the session table from database
 
 Example:
 
@@ -72,7 +72,7 @@ Note that `:expire-secs` is in seconds because the SQL-92 standard allows
 *second* precision to be supported by databases, even though certain databases
 may support finer precision than *second*.
 
-## `start-cleaner` - Starts background cleaner to remove stale keys from DB
+## `start-cleaner` - Starts background cleaner to remove stale keys
 
 This function returns a `Stoppable` instance that you can pass to `stop-cleaner`
 as argument.
