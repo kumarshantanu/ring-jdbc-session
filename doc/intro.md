@@ -15,15 +15,15 @@ Example:
 (create-session-table conn-factory {:val-column-type "VARCHAR(4096)"})
 ```
 
-| Required argument       | Option        | Default value    |
-|-------------------------|---------------|------------------|
-| conn-factory            | `:table-name` | `"ring_session"` |
-| (Instance of            | `:key-column` | `"session_key"`  |
-| `javax.sql.DataSource`) | `:val-column` | `"session_val"`  |
-|                         | `:ts-column`  | `"session_ts"`   |
-|                         | `:key-column-type` | `"VARCHAR(100) UNIQUE NOT NULL"` |
-|                         | `:val-column-type` | `"VARCHAR(1024)"`      |
-|                         | `:ts-column-type`  | `"TIMESTAMP NOT NULL"` |
+| Required argument                              | Option        | Default value    |
+|------------------------------------------------|---------------|------------------|
+| conn-factory (`javax.sql.DataSource` instance) | `:table-name` | `"ring_session"` |
+|                                                | `:key-column` | `"session_key"`  |
+|                                                | `:val-column` | `"session_val"`  |
+|                                                | `:ts-column`  | `"session_ts"`   |
+|                                                | `:key-column-type` | `"VARCHAR(100) UNIQUE NOT NULL"` |
+|                                                | `:val-column-type` | `"VARCHAR(1024)"`      |
+|                                                | `:ts-column-type`  | `"TIMESTAMP NOT NULL"` |
 
 When using this library in an app, it may make sense to create the session table
 using your favourite database-migration workflow instead of this function. The
@@ -39,7 +39,7 @@ required columns are below:
 
 Example:
 
-```
+```clojure
 (drop-session-table conn-factory)
 (drop-session-table conn-factory {:table-name "http_session"})
 ```
