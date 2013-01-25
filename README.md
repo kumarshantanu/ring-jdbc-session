@@ -23,16 +23,16 @@ for use with this library. A `DataSource` is like a connection factory. See
 [c3p0](http://clojure.github.com/java.jdbc/doc/clojure/java/jdbc/ConnectionPooling.html)
 on how to create a `DataSource`. Let's assume the `DataSource` is bound to a var `ds`.
 
-```clojure
-(def ds (clj-dbcp.core/make-datasource :mysql {:host "localhost" :database "abc"
-                                               :user "dbuser" :password "s3cr3t"}))
-```
+   ```clojure
+   (def ds (clj-dbcp.core/make-datasource :mysql {:host "localhost" :database "abc"
+                                                  :user "dbuser" :password "s3cr3t"}))
+   ```
 
 2. Create the session table if not already created:
 
-```clojure
-(ring-jdbc-session.core/create-session-table ds)
-```
+   ```clojure
+   (ring-jdbc-session.core/create-session-table ds)
+   ```
 
 ### Create and use the session store
 
