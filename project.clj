@@ -1,6 +1,6 @@
 (defproject ring-jdbc-session "0.1.0-SNAPSHOT"
   :description "JDBC based HTTP session store for Ring (Clojure)"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/kumarshantanu/ring-jdbc-session"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :warn-on-reflection true
