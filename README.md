@@ -23,7 +23,7 @@ for use with this library. A `DataSource` is like a connection factory. See
 [c3p0](http://clojure.github.com/java.jdbc/doc/clojure/java/jdbc/ConnectionPooling.html)
 on how to create a `DataSource`. Let's assume the `DataSource` is bound to a var `ds`.
 
-```
+```clojure
 (def ds (clj-dbcp.core/make-datasource :mysql {:host "localhost" :database "abc"
                                                :user "dbuser" :password "s3cr3t"}))
 ```
