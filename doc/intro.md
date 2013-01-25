@@ -72,7 +72,7 @@ Note that `:expire-secs` is in seconds because the SQL-92 standard allows
 *second* precision to be supported by databases, even though certain databases
 may support finer precision than *second*.
 
-## `start-cleaner` - Starts a background cleaner to remove stale keys from DB
+## `start-cleaner` - Starts background cleaner to remove stale keys from DB
 
 This function returns a `Stoppable` instance that you can pass to `stop-cleaner`
 as argument.
