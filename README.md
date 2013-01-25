@@ -34,6 +34,15 @@ on how to create a `DataSource`. Let's assume the `DataSource` is bound to a var
    (ring-jdbc-session.core/create-session-table ds)
    ```
 
+   Or simply create a table using the following
+   [DDL](http://en.wikipedia.org/wiki/Data_definition_language):
+
+   ```sql
+   CREATE TABLE ring_session (session_key VARCHAR(100) UNIQUE NOT NULL,
+                              session_val VARCHAR(1024),
+                              session_ts TIMESTAMP NOT NULL)
+   ```
+
 ### Create and use the session store
 
 #### Use with Ring
