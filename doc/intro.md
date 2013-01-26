@@ -35,6 +35,9 @@ required columns are below:
 | Session data            | `"session_val"` | As per `make-session-store :serializer` |
 | Last-accessed timestamp | `"session_ts"`  | `java.sql.Timestamp` |
 
+For production use consider *Session key* column to have a Hash index and
+*Last-accessed timestamp* column to have a BTree index.
+
 ## `drop-session-table` - Drops the session table from database
 
 Example:
