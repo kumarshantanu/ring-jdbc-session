@@ -13,7 +13,9 @@ Tested with Clojure versions 1.3, 1.4 and 1.5-RC3 with the following databases:
 
 ### Leiningen dependency
 
-On Clojars: [[ring-jdbc-session "0.1.0"]](https://clojars.org/ring-jdbc-session)
+Coordinates: `[ring-jdbc-session "0.1.0"]`
+
+On Clojars: https://clojars.org/ring-jdbc-session
 
 ### Pre-requisite
 
