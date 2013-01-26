@@ -13,7 +13,7 @@ Tested with Clojure versions 1.3, 1.4 and 1.5-RC3 with the following databases:
 
 ### Leiningen dependency
 
-On Clojars: _Not on Clojars yet_
+On Clojars: [[ring-jdbc-session "0.1.0"]](https://clojars.org/ring-jdbc-session)
 
 ### Pre-requisite
 
